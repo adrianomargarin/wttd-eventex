@@ -86,10 +86,14 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
+envwttd
 
 # Spyder project settings
 .spyderproject
 .spyproject
+
+# Sublime text project settings
+*sublime-*
 
 # Rope project settings
 .ropeproject
