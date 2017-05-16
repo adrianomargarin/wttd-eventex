@@ -103,3 +103,6 @@ envwttd
 
 # mypy
 .mypy_cache/
+
+# Sqlite
+*.sqlite3
