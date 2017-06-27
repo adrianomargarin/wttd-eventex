@@ -42,7 +42,8 @@ INSTALLED_APPS = [
 ]
 
 PROJECT_APPS = [
-    'eventex.core'
+    'eventex.core',
+    'eventex.subscriptions',
 ]
 
 INSTALLED_APPS += PROJECT_APPS
