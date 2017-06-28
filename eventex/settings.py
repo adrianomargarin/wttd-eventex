@@ -42,12 +42,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+EXTRA_APPS = [
+    'django_extensions',
+]
+
 PROJECT_APPS = [
     'eventex.core',
     'eventex.subscriptions',
 ]
 
+INSTALLED_APPS += EXTRA_APPS
 INSTALLED_APPS += PROJECT_APPS
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

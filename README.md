@@ -19,7 +19,7 @@ git clone git@github.com:adrianomargarin/wttd-eventex.git wttd
 cd wttd
 virtualenv env --python=python3
 source env/bin/activate
-pip install -r requirements.txt
+pip install -r requirements_dev.txt
 cp contrib/env-sample .env
 python manage.py test
 
