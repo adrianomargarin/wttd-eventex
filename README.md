@@ -2,6 +2,9 @@
 
 Sistema de Eventos encomendado pela Morena.
 
+[![Build Status](https://travis-ci.org/adrianomargarin/wttd-eventex.svg?branch=master)](https://travis-ci.org/adrianomargarin/wttd-eventex)
+[![Code Health](https://landscape.io/github/adrianomargarin/wttd-eventex/master/landscape.svg?style=flat)](https://landscape.io/github/adrianomargarin/wttd-eventex/master)
+
 ## Como desenvolver?
 
 1. Clone o repositório.
