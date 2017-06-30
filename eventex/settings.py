@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 EXTRA_APPS = [
+    'test_without_migrations',
     'django_extensions',
 ]
 
@@ -53,7 +54,6 @@ PROJECT_APPS = [
 
 INSTALLED_APPS += EXTRA_APPS
 INSTALLED_APPS += PROJECT_APPS
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
