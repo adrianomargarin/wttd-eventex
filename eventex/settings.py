@@ -49,7 +49,7 @@ EXTRA_APPS = [
 
 PROJECT_APPS = [
     'eventex.core',
-    'eventex.subscriptions',
+    'eventex.subscriptions.apps.SubscriptionsConfig',
 ]
 
 INSTALLED_APPS += EXTRA_APPS
