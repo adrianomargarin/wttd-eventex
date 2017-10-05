@@ -53,7 +53,8 @@ class SubscriptionFormTest(TestCase):
         """Email incorrect an Phone are optional, but one must be informed"""
         form = self.make_validated_form(email='incorrect', phone='')
 
-        self.assertListEqual(list(form.errors), ['__all__', 'email'])
+        self.assertTrue(form.errors['__all__'])
+        self.assertTrue(form.errors['email'])
 
     def assertFormErrorCode(self, form, field, code):
         errors = form.errors.as_data()
