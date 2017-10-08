@@ -1,5 +1,6 @@
 from django.contrib import admin
 
+from eventex.core.models import Talk
 from eventex.core.models import Speaker
 from eventex.core.models import Contact
 
@@ -28,4 +29,6 @@ class SpeakerModelAdmin(admin.ModelAdmin):
     photo_img.allow_tags = True
     photo_img.short_description = 'Foto'
 
+
 admin.site.register(Speaker, SpeakerModelAdmin)
+admin.site.register(Talk)
