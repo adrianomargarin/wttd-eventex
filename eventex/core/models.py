@@ -34,8 +34,8 @@ class Contact(models.Model):
     PHONE = 'P'
 
     KINDS = (
-        ('E', EMAIL),
-        ('P', PHONE)
+        (EMAIL, 'E-mail'),
+        (PHONE, 'Telefone')
     )
 
     speaker = models.ForeignKey(Speaker, verbose_name='Palestrante')
@@ -48,9 +48,10 @@ class Contact(models.Model):
         return self.value
 
 
-class Talk(models.Model):
+class Activity(models.Model):
 
     class Meta:
+        abstract = True
         verbose_name = 'Palestra'
         verbose_name_plural = 'Palestras'
 
@@ -63,3 +64,21 @@ class Talk(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Talk(Activity):
+
+    class Meta:
+        verbose_name = 'Palestra'
+        verbose_name_plural = 'Palestras'
+
+    pass
+
+
+class Course(Activity):
+
+    class Meta:
+        verbose_name = 'Curso'
+        verbose_name_plural = 'Cursos'
+
+    slots = models.IntegerField()
